@@ -9,13 +9,6 @@ pipeline {
                 sh 'sudo apt install npm -y'
             }
         }
-        stage('Test') {
-            steps {
-
-                sh label: '', script: '''pwd
-                                        ./jenkins/scripts/test.sh
-                                        '''
-            }
-        }
+        
     }
 }
